@@ -1,0 +1,211 @@
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.App {
+  display: block;
+  justify-content: center;
+  background-color: #47614d;
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+}
+.header > span {
+  font-size: 50px;
+  margin-top: 20px;
+  color: white;
+}
+.body {
+  background-color: #47614d;
+  width: 100%;
+  height: 100%;
+}
+
+.card-groups {
+  justify-content: center;
+}
+
+.card-groups > div {
+  width: 250px;
+  min-width: 250px !important;
+  max-width: 250px !important;
+}
+
+.card-groups > div .card {
+  width: 100%;
+  margin: 0;
+  height: 440px;
+}
+
+.linksSection {
+  width : 100%;
+  height : 200px;
+}
+.logo-container {
+  display: grid;
+  grid-template-columns: repeat(4,50px);
+  grid-gap: 20px;
+  margin-left : 40%;
+}
+ .icon-links {
+  font-size: 45px !important;
+  color: #fff;
+  cursor: pointer;
+ }
+
+.about-card {
+  display: flex;
+  order: 1;
+  height: 450px;
+}
+
+.skills {
+  display: flex;
+  float: left;
+  background-color: #ecf0f1;
+  order: 1;
+  width: 250px;
+  height: 400px;
+}
+
+.work-experience {
+  display: flex;
+  float: right;
+  background-color: #ecf0f1;
+  order :1;
+  width: 250px;
+  height: 400px;
+}
+.work-experience > h4 {
+  justify-content: center;
+  text-align: center;
+}
+.card-title {
+  border-bottom: var(--secondary) solid 1px !important;
+}
+.float-left{
+float: left;
+}
+
+#experience .timeline {
+  list-style-type: none;
+  position: relative;
+}
+#experience .timeline:before {
+  content: ' ';
+  background: var(--secondary);
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 400;
+}
+#experience ul.timeline > li {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+#experience ul.timeline > li:before {
+  content: ' ';
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #6c757d;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 400;
+}
+
+.job-list > h4 {
+  font-size: 0.9rem;
+}
+.job-list > p {
+  font-size: 0.7rem;
+}
+
+#main-container {
+  height: 100vh !important;
+}
+
+.footer {
+  height: 100px;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.height-class {
+  height: 440px;
+}
+@media (max-width : 756px) {
+  #root {
+    width: 100%;
+    height: 100%;
+  }
+
+  .App {
+    display: block;
+    justify-content: center;
+    background-color: #47614d;
+    width: 100%;
+    height: 100%;
+  }
+
+  #main-container {
+    height: 100% !important;
+    justify-content: center;
+  }
+
+  .margin-top {
+    margin-top: 5%;
+  }
+}
+
+
+/* On Mobile not rotation */
+@media (min-width: 756px) {
+  .leftDiv{
+    transform: rotateY(180deg);
+    transform-origin: 100% 0%;
+    transition: transform 2s;
+    transform-style: preserve-3d;
+    z-index: 1;
+  }
+  :hover .leftDiv{
+    transform: rotateY(0deg);
+    transform-origin: 100% 0%;
+    transform-style: preserve-3d;
+  }
+
+  .middleDiv{
+    z-index: 100;
+    transition: transform 2s;
+  }
+
+  :hover .middleDiv{
+    transform: scale(1.1);
+  }
+
+  .rightDiv{
+    transform: rotateY(-180deg);
+    transform-origin: 0% 0%;
+    transition: transform 2s;
+    transform-style: preserve-3d;
+    z-index: 1;
+  }
+ :hover .rightDiv{
+    transform: rotateY(0deg);
+    transform-origin: 0% 0%;
+    transform-style: preserve-3d;
+  }
+}
+
+
