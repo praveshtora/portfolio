@@ -1,1 +1,1 @@
-Link to portfolio - pravesh.netlify.com
+Link to [portfolio](pravesh.netlify.com)
