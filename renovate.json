@@ -2,5 +2,6 @@
   "extends": [
     "config:base"
   ],
-  "prCreation" : "approval"
+  "prCreation" : "approval",
+  "masterIssueApproval" :"true"
 }
