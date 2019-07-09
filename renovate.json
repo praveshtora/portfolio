@@ -3,5 +3,5 @@
     "config:base"
   ],
   "prCreation" : "approval",
-  "masterIssueApproval" :"true"
+  "masterIssueApproval" :"true",
 }
